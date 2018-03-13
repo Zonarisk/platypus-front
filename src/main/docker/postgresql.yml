@@ -1,0 +1,11 @@
+version: '2'
+services:
+    front-postgresql:
+        image: postgres:9.6.5
+        # volumes:
+        #     - ~/volumes/jhipster/front/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=front
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
